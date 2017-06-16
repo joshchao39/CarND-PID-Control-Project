@@ -6,9 +6,8 @@ public:
   /*
   * Errors
   */
-  double p_error;
   double i_error;
-  double d_error;
+  double cte_prev;
 
   /*
   * Coefficients
@@ -35,12 +34,7 @@ public:
   /*
   * Update the PID error variables given cross track error.
   */
-  void UpdateError(double cte);
-
-  /*
-  * Calculate the total PID error.
-  */
-  double TotalError();
+  double GetSteeringAngle(double cte);
 };
 
 #endif /* PID_H */
