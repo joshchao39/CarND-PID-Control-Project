@@ -7,16 +7,18 @@
 
 #include <vector>
 #include <iostream>
+#include <math.h>
 
 class Twiddle {
     std::vector<double> K;
     std::vector<double> dK;
     double tolerance;
-    double bestError;
-    int polarity;
-    size_t pos;
+    int polarity = true;
+    size_t pos = 0;
 
 public:
+    double bestError = NAN;
+
     Twiddle(double tolerance);
 
     std::vector<double> Reset(std::vector<double> K, std::vector<double> dK);
