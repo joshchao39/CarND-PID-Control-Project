@@ -34,7 +34,7 @@ After running the simulator for a long time we have (Kp=0.305626, Ki=0.00160386,
 
 ## Example
 <p align="center">
-  <img src="writeup_files/track1.gif" alt="Driving autonomously on track 1"/>
+  <img src="example.gif" alt="PID Control Loop at Work"/>
 </p>
 
 ## Other Notes
